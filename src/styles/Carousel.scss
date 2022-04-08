@@ -1,0 +1,37 @@
+@import './library.scss';
+
+#carousel {
+  display: flex;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+@keyframes left-to-right {
+  @for $i from 0 through $num-car-items {
+    #{$i / ($num-car-items / 10) * 10%} {
+      left: #{$i * 10 * 2%};
+    }
+  }
+}
+
+@mixin auto-carousel {
+  @for $i from 1 through $num-car-items {
+    &:nth-child(#{$i}) {
+      animation-name: left-to-right;
+      animation-duration: #{$num-car-items * $car-delay}s;
+      animation-iteration-count: infinite;
+      animation-delay: #{$i * $car-delay}s;
+      animation-fill-mode: none;
+    }
+  }
+}
+
+.carousel-item { 
+  position: absolute;
+  transform: translateX(-100%);
+  font-size: 35px;
+  color: $font-color;
+  @include auto-carousel;
+}

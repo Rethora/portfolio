@@ -1,0 +1,18 @@
+@import './library.scss';
+
+#not-found-body {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: $background-color;
+}
+
+@media only screen and (max-width: 400px) {
+  #not-found-container {
+    margin-top: 50px;
+  }
+
+  #not-found-body {
+    font-size: 20px;
+  }
+}

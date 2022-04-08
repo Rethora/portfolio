@@ -1,0 +1,37 @@
+@import './library.scss';
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.left {
+  text-align: left;
+}
+
+.bounce-char {
+  position: relative;
+  display: inline-block;
+  animation: bounce 1s;
+}
+
+span.char {
+  color: $secondary-blue;
+  background-color: $background-color;
+  width: fit-content;
+  font-family: $heading-font;
+}
+
+@keyframes bounce {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-20px)
+  }
+}

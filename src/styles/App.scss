@@ -1,0 +1,70 @@
+@import './library.scss';
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100vh;
+  background-color: $background-color;
+}
+
+body {
+  color: $font-color;
+  padding: 0 $page-margin;
+  margin: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 100px 0;
+}
+
+// for pages with cards
+.cards-container {
+  width: 100%;
+  margin: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0 $page-margin - 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #background {
+    display: none;
+  }
+
+  body {
+    background-color: $background-color;
+    background: $background-color;
+    padding: 0 $page-margin - 60px;
+  }
+}
