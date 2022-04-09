@@ -21,7 +21,11 @@ class App extends Component {
             <div className="content">
               <Menu />
               <Routes>
-                <Route exact path='/' element={<Home />} />
+                <Route
+                  exact
+                  path='/'
+                  element={<Home />}
+                />
                 <Route
                   path='/certs'
                   element={<Certs />}
