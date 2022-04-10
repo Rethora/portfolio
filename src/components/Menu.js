@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, createRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import { VscListFlat } from 'react-icons/vsc'
 
@@ -7,6 +7,8 @@ import '../styles/Menu.scss'
 export class Menu extends Component {
   constructor(props) {
     super(props)
+    this.menuRef = createRef()
+    this.menuItemsRef = createRef()
     this.state = {
       lastYPos: 0,
       menuVisible: true,
@@ -18,10 +20,10 @@ export class Menu extends Component {
     this.addMenuAnimation()
   }
 
-  addMenuAnimation() {
+  addMenuAnimation = () => {
     document.addEventListener('scroll', () => {
       const translationsArr = [...Array(101).keys()]
-      const menu = document.getElementById('menu')
+      const menu = this.menuRef.current
       const { lastYPos, menuVisible } = this.state
       const { scrollY } = window
 
@@ -41,45 +43,61 @@ export class Menu extends Component {
     })
   }
 
-  translateMenu(menu, num, wait) {
+  translateMenu = (menu, num, wait) => {
     setTimeout(() => menu.style.transform = `translateY(-${num}%)`, 3 * wait)
   }
 
-  showMenuItems() {
-    !this.state.menuItemsVisible ?
-      document.getElementById('toggle-menu-items').style.display = 'flex' :
-      document.getElementById('toggle-menu-items').style.display = 'none'
+  showMenuItems = () => {
+    if (!this.state.menuItemsVisible) {
+      this.menuItemsRef.current.style.display = 'flex'
+    } else {
+      this.menuItemsRef.current.style.display = 'none'
+    }
     this.setState({ menuItemsVisible: !this.state.menuItemsVisible })
   }
 
   handleClick = () => {
     if (this.state.menuItemsVisible) {
-      document.getElementById('toggle-menu-items').style.display = 'none'
+      this.menuItemsRef.current.style.display = 'none'
       this.setState({ menuItemsVisible: false })
     }
   }
 
   render() {
     return (
-      <div id="menu">
-        <div className='menu-items'>
+      <div
+        id="menu"
+        ref={this.menuRef}
+      >
+        <div
+          className='menu-items'
+        >
           <NavLink
             to='/'
             className='menu-item'
-            onClick={() => this.handleClick()}
+            onClick={this.handleClick}
           >
             LOGO
           </NavLink >
-          <div id='menu-container'>
-            <MenuItems handleClick={this.handleClick} />
+          <div
+            id='menu-container'
+          >
+            <MenuItems
+              handleClick={this.handleClick}
+            />
           </div>
           <VscListFlat
             id='toggler'
-            onClick={() => this.showMenuItems()}
+            onClick={this.showMenuItems}
           />
         </div >
-        <div id='toggle-menu-items'>
-          <MenuItems handleClick={this.handleClick} />
+        <div
+          id='toggle-menu-items'
+          ref={this.menuItemsRef}
+        >
+          <MenuItems
+            handleClick={this.handleClick}
+          />
         </div>
       </div>
     )
@@ -97,13 +115,6 @@ class MenuItems extends Component {
         >
           HOME
         </NavLink>
-        {/* <NavLink
-          to='/about'
-          className='menu-item menu-link'
-          onClick={() => this.props.handleClick()}
-        >
-          ABOUT
-        </NavLink> */}
         <NavLink
           to='/certs'
           className='menu-item menu-link'
