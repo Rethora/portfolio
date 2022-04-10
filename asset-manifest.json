@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4fba40b7.css",
-    "main.js": "/portfolio/static/js/main.7069911e.js",
+    "main.css": "/portfolio/static/css/main.f18471d2.css",
+    "main.js": "/portfolio/static/js/main.752436a6.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/twitch-bot.png": "/portfolio/static/media/twitch-bot.0d4c6caab0ed76c6d390.png",
@@ -11,6 +11,7 @@
     "static/media/js-css-html.jpg": "/portfolio/static/media/js-css-html.0a3a39543e4073975c87.jpg",
     "static/media/java-recommendation-system.jpg": "/portfolio/static/media/java-recommendation-system.d1763c467a95b8b17869.jpg",
     "static/media/software-problems.jpg": "/portfolio/static/media/software-problems.fe76fb0af1f19b4703b3.jpg",
+    "static/media/alien.png": "/portfolio/static/media/alien.8a2e0f9872eab2091d50.png",
     "static/media/software-design-principles.jpg": "/portfolio/static/media/software-design-principles.4a30583217fc72ecb286.jpg",
     "static/media/java-array-lists.jpg": "/portfolio/static/media/java-array-lists.a5bd41d3b42bc5003c38.jpg",
     "static/media/recommendation-system.png": "/portfolio/static/media/recommendation-system.55cb38e6093914373486.png",
@@ -22,13 +23,13 @@
     "static/media/game-of-life.png": "/portfolio/static/media/game-of-life.0abc7910c276430e305f.png",
     "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.e11ae663a397f95c31ad.png",
     "index.html": "/portfolio/index.html",
-    "main.4fba40b7.css.map": "/portfolio/static/css/main.4fba40b7.css.map",
-    "main.7069911e.js.map": "/portfolio/static/js/main.7069911e.js.map",
+    "main.f18471d2.css.map": "/portfolio/static/css/main.f18471d2.css.map",
+    "main.752436a6.js.map": "/portfolio/static/js/main.752436a6.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fba40b7.css",
-    "static/js/main.7069911e.js"
+    "static/css/main.f18471d2.css",
+    "static/js/main.752436a6.js"
   ]
 }
