@@ -3,13 +3,10 @@ import bitmoji from '../assets/bitmoji.png'
 
 import '../styles/Home.scss'
 
-import Filler from '../components/Filler'
 import About from '../pages/About'
-import Certs from '../pages/Certs'
-import Work from '../pages/Work'
-import Contact from '../pages/Contact'
 import Carousel from '../components/Carousel'
 import Heading from '../components/Heading'
+import Game from '../components/Game'
 
 export class Home extends Component {
   render() {
@@ -25,6 +22,7 @@ export class Home extends Component {
           />
         </div>
         <Carousel />
+        <Game />
       </div>
     )
   }
