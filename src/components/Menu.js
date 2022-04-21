@@ -39,7 +39,7 @@ export class Menu extends Component {
           this.setState({ menuVisible: false })
         }
       }
-      this.setState({ lastYPos: scrollY })
+      scrollY > 0 ? this.setState({ lastYPos: scrollY }) : this.setState({ lastYPos: 0 })
     })
   }
 
