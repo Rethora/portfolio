@@ -2,7 +2,11 @@
 
 .card {
   width: $card-item-size;
+  height: 450px;
   margin: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .project-name {
@@ -22,6 +26,7 @@
   margin-bottom: 3px;
   box-shadow: $div-shadow;
   opacity: .7;
+
   &:hover {
     cursor: pointer;
     opacity: 1;
@@ -45,13 +50,20 @@
   font-family: $text-font;
 }
 
-.card-footer > a:focus {
+.card-footer>a:focus {
   color: $secondary-blue;
 }
 
-a > .card-tech-item {
+a>.card-tech-item {
   margin: 3px 0 0 0;
+
   &:hover {
     color: $secondary-blue;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    margin: 0;
   }
 }

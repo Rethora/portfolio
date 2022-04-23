@@ -1,6 +1,7 @@
 import React, { Component, createRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import { VscListFlat } from 'react-icons/vsc'
+import logo from '../assets/logo.png'
 
 import '../styles/Menu.scss'
 
@@ -77,7 +78,11 @@ export class Menu extends Component {
             className='menu-item'
             onClick={this.handleClick}
           >
-            LOGO
+            <img
+              id='logo'
+              src={logo}
+              alt='logo Dane Roelofs'
+            />
           </NavLink >
           <div
             id='menu-container'

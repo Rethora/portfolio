@@ -2,15 +2,10 @@
 
 .about-content {
   width: 65%;
-  // margin: auto;
 }
 
-.info {
-  background-color: $background-color;
-  font-family: $text-font;
-  font-size: larger;
-}
-
-.test {
-  width: 50%;
+@media screen and (max-width: 1000px) {
+  .about-content {
+    width: 100%;
+  }
 }
