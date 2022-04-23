@@ -5,12 +5,6 @@ import '../styles/Modal.scss'
 
 export class Modal extends Component {
 
-  // componentDidUpdate() {
-  //   if (this.props.show) {
-  //     document.getElementById('close-btn').focus()
-  //   }
-  // }
-
   render() {
     if (!this.props.show) {
       return null

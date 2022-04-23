@@ -5,8 +5,42 @@
 }
 
 .bitmoji {
-  justify-content: right;
   height: 100%;
-  // width: 40%;
-  // margin: auto;
+}
+
+#game-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#portfolio-info {
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 1440px) {
+  #game-info-container {
+    flex-direction: column;
+  }
+
+  #portfolio-info {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bitmoji {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bitmoji {
+    display: none;
+  }
 }

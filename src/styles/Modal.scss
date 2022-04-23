@@ -1,6 +1,6 @@
 @import './library.scss';
 
-.modal { 
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +17,6 @@
   opacity: 1;
   width: 60%;
   height: 60%;
-  // background-color: rgba(255, 255, 255, 0.308);
 }
 
 .modal-header {
@@ -28,7 +27,9 @@
   border: none;
   background-color: transparent;
   color: $font-color;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     color: $secondary-blue;
     cursor: pointer;
   }
@@ -36,6 +37,7 @@
 
 .close-btn {
   font-size: 50px;
+
   &:hover {
     color: $secondary-blue;
     cursor: pointer;
@@ -49,7 +51,9 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .modal-body, .close-btn {
+
+  .modal-body,
+  .close-btn {
     font-size: large;
   }
 }

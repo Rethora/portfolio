@@ -1,8 +1,12 @@
 @import './library.scss';
 
-a {
+a.menu-item {
   text-decoration: none;
   color: $font-color;
+}
+
+#logo {
+  height: 20px;
 }
 
 #menu {
@@ -124,7 +128,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .menu-item:first-child {
     margin-left: $page-margin - 60;
   }

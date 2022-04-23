@@ -20,26 +20,28 @@ export class ContactForm extends Component {
     }
   }
 
-  async handleSubmit(e) {
+  handleChange = e => {
+    const { form } = this.state
+    form[e.target.name] = e.target.value
+    this.setState({ form: form })
+  }
+
+  handleSubmit = async (e) => {
     e.preventDefault()
-    // try {
-    //   const res = await axios.post('https://formspree.io/f/mnqwzvoa', this.state.form)
-    //   if (res.ok) {
-    //     // success
-    //     this.setState({show: true, modalMessage: "Your message has been sent! We'll be in contact soon."})
-    //   } else {
-    //     // error
-    //     this.setState({show: true, modalMessage: "Oops... Something went wrong trying to send your message. Please try again"})
-    //   }
-    // } catch (err) {
-    //   // error
-    //   this.setState({show: true, modalMessage: "Oops... Something went wrong trying to send your message. Please try again"})
-    //   console.error(err)
-    // }
-    // test cool message sent animation here
-    this.setState({
-      show: true, modalMessage: "Your message has been sent! We'll be in contact soon.", form: this.form
-    })
+    try {
+      const res = await axios.post('https://formspree.io/f/mnqwzvoa', this.state.form)
+      if (res.ok) {
+        // success
+        this.setState({ show: true, modalMessage: "Your message has been sent! We'll be in contact soon.", form: this.form })
+      } else {
+        // error
+        this.setState({ show: true, modalMessage: "Oops... Something went wrong trying to send your message. Please try again" })
+      }
+    } catch (err) {
+      // error
+      this.setState({ show: true, modalMessage: "Oops... Something went wrong trying to send your message. Please try again" })
+      console.error(err)
+    }
   }
 
   closeModal = () => {
@@ -50,70 +52,76 @@ export class ContactForm extends Component {
     const { form, show, modalMessage } = this.state
     return (
       <>
-        <form onSubmit={(e) => this.handleSubmit(e)} id='contact-form'>
-          <div className='form-input-container'>
-            <div className='underline-animate'>
+        <form
+          id='contact-form'
+          onSubmit={(e) => this.handleSubmit(e)}
+        >
+          <div
+            className='form-input-container'
+          >
+            <div
+              className='underline-animate'
+            >
               <input
                 required
-                type="text"
+                name='name'
+                type='text'
                 placeholder='Name'
                 value={form.name}
-                onChange={(e) => this.setState(prev => ({
-                  form: {
-                    ...prev.form,
-                    name: e.target.value
-                  }
-                }))}
+                onChange={this.handleChange}
               />
             </div>
-            <div className="underline-animate">
+            <div
+              className='underline-animate'
+            >
               <input
                 required
-                type="email"
+                name='email'
+                type='email'
                 placeholder='Email'
                 value={form.email}
-                onChange={(e) => this.setState(prev => ({
-                  form: {
-                    ...prev.form,
-                    email: e.target.value
-                  }
-                }))}
+                onChange={this.handleChange}
               />
             </div>
           </div>
-          <div className='form-input-container'>
-            <div className="underline-animate">
+          <div
+            className='form-input-container'
+          >
+            <div
+              className='underline-animate'
+            >
               <input
                 required
-                type="text"
+                name='subject'
+                type='text'
                 placeholder='Subject'
                 value={form.subject}
-                onChange={(e) => this.setState(prev => ({
-                  form: {
-                    ...prev.form,
-                    subject: e.target.value
-                  }
-                }))}
+                onChange={this.handleChange}
               />
             </div>
           </div>
-          <div className="form-input-container">
-            <div className="underline-animate message">
+          <div
+            className='form-input-container'
+          >
+            <div
+              className='underline-animate message'
+            >
               <textarea
                 required
+                name='message'
                 placeholder='Message'
                 value={form.message}
-                onChange={(e) => this.setState(prev => ({
-                  form: {
-                    ...prev.form,
-                    message: e.target.value
-                  }
-                }))}
+                onChange={this.handleChange}
               />
             </div>
           </div>
-          <div className="form-input-container">
-            <input type='submit' value='SEND' />
+          <div
+            className='form-input-container'
+          >
+            <input
+              type='submit'
+              value='SEND'
+            />
           </div>
         </form>
         <Modal
