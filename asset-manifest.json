@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f18471d2.css",
-    "main.js": "/portfolio/static/js/main.2c315e73.js",
+    "main.css": "/portfolio/static/css/main.cbf597ea.css",
+    "main.js": "/portfolio/static/js/main.b2d2077c.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/twitch-bot.png": "/portfolio/static/media/twitch-bot.0d4c6caab0ed76c6d390.png",
@@ -23,13 +23,13 @@
     "static/media/game-of-life.png": "/portfolio/static/media/game-of-life.0abc7910c276430e305f.png",
     "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.e11ae663a397f95c31ad.png",
     "index.html": "/portfolio/index.html",
-    "main.f18471d2.css.map": "/portfolio/static/css/main.f18471d2.css.map",
-    "main.2c315e73.js.map": "/portfolio/static/js/main.2c315e73.js.map",
+    "main.cbf597ea.css.map": "/portfolio/static/css/main.cbf597ea.css.map",
+    "main.b2d2077c.js.map": "/portfolio/static/js/main.b2d2077c.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f18471d2.css",
-    "static/js/main.2c315e73.js"
+    "static/css/main.cbf597ea.css",
+    "static/js/main.b2d2077c.js"
   ]
 }
