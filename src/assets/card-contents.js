@@ -1,4 +1,3 @@
-import placeHolderImage from './projects/card-image.png'
 import simon from './projects/simon.png'
 import gameOfLife from './projects/game-of-life.png'
 import recommendationSystem from './projects/recommendation-system.png'
