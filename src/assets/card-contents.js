@@ -1,3 +1,4 @@
+import evt from './projects/evt.png'
 import simon from './projects/simon.png'
 import gameOfLife from './projects/game-of-life.png'
 import recommendationSystem from './projects/recommendation-system.png'
@@ -16,6 +17,13 @@ import javaCert from './certs/java-cert.jpg'
 import dataVisCert from './certs/data-visualization.png'
 
 export const work = [
+  {
+    title: 'Educational Vision Technologies',
+    img: evt,
+    items: ['Typescript', 'React', 'Python', 'Django'],
+    link: 'https://evt.ai/',
+    github: ''
+  },
   {
     title: 'Movie Recommendation System',
     img: recommendationSystem,
@@ -52,7 +60,7 @@ export const work = [
     github: 'https://github.com/Rethora/game-of-life'
   },
   {
-    title: 'Tic-Tac-Toe',
+    title: 'Tic-Tac-Toe v Bot',
     img: ticTacToe,
     items: ['CSS', 'JavaScript', 'React'],
     link: 'https://qd3pz.csb.app/',
