@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si'
+import { SiCodewars, SiGithub, SiGmail, SiLinkedin } from 'react-icons/si'
 import { NavLink } from 'react-router-dom'
 
 import '../styles/Footer.scss'
@@ -46,6 +46,20 @@ export class Footer extends Component {
               Linkedin
             </span>
             <SiLinkedin
+              className='media-icon'
+            />
+          </div>
+        </a>
+        <a
+          target='_blank'
+          rel='noreferrer'
+          href='https://www.codewars.com/users/Rethoracle'
+        >
+          <div className='media-link'>
+            <span>
+              CodeWars
+            </span>
+            <SiCodewars
               className='media-icon'
             />
           </div>
