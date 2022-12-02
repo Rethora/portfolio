@@ -5,6 +5,10 @@ import recommendationSystem from './projects/recommendation-system.png'
 import ticTacToe from './projects/tic-tac-toe.png'
 import twitchBot from './projects/twitch-bot.png'
 import mineCraftPlugins from './projects/minecraft-plugins.jpg'
+import coverLetterWriter from './projects/cover-letter-writer.png'
+import bestBuyScalper from './projects/best-buy-scalper.png'
+import reactQuizComponent from './projects/react-quiz-component.png'
+import recipeScraper from './projects/recipe-scraper.png'
 
 import jsCert from './certs/js-css-html.jpg'
 import principlesCert from './certs/software-design-principles.jpg'
@@ -32,41 +36,47 @@ export const work = [
     github: 'https://github.com/Rethora/movie-recommendation-system'
   },
   {
-    title: 'MineCraft Plugins',
+    title: 'Best Buy Scalper',
+    img: bestBuyScalper,
+    items: ['Python', 'Selenium', 'Tkinter'],
+    link: 'https://github.com/Rethora/bestbuy-scalper',
+    github: 'https://github.com/Rethora/bestbuy-scalper'
+  },
+  {
+    title: 'Custom MineCraft Plugins',
     img: mineCraftPlugins,
     items: ['Java', 'Spigot'],
     link: 'https://github.com/Rethora/minecraft-plugins',
     github: 'https://github.com/Rethora/minecraft-plugins'
   },
   {
-    title: 'Simon',
-    img: simon,
-    items: ['SCSS', 'JavaScript', 'React'],
-    link: 'https://obzn7.csb.app/',
-    github: 'https://github.com/Rethora/simon-game'
-  },
-  {
-    title: 'Twitch Bot',
+    title: 'Goal Recognition Twitch Bot',
     img: twitchBot,
     items: ['Node.js', 'Tesseract.js', 'Selenium'],
     link: 'https://github.com/Rethora/twitch-bot',
     github: 'https://github.com/Rethora/twitch-bot'
   },
   {
-    title: "Conway's Game of Life",
-    img: gameOfLife,
-    items: ['CSS', 'JavaScript', 'React'],
-    link: 'https://3ug8p.csb.app/',
-    github: 'https://github.com/Rethora/game-of-life'
+    title: 'Auto Cover Letter Writer',
+    img: coverLetterWriter,
+    items: ['Python'],
+    link: 'https://github.com/Rethora/cover-letter-generator',
+    github: 'https://github.com/Rethora/cover-letter-generator'
   },
   {
-    title: 'Tic-Tac-Toe v Bot',
-    img: ticTacToe,
-    items: ['CSS', 'JavaScript', 'React'],
-    link: 'https://qd3pz.csb.app/',
-    github: 'https://github.com/Rethora/tic-tac-toe'
+    title: 'React Quiz Component Library',
+    img: reactQuizComponent,
+    items: ['React', 'JavaScript', 'npm package'],
+    link: 'https://wingkwong.github.io/react-quiz-component/',
+    github: 'https://github.com/wingkwong/react-quiz-component'
+  },
+  {
+    title: 'Recipe Scraper Library',
+    img: recipeScraper,
+    items: ['Node', 'JavaScript', 'npm package'],
+    link: 'https://www.npmjs.com/package/rethora-recipe-scraper?activeTab=readme',
+    github: 'https://github.com/Rethora/recipe-scraper'
   }
-
 ]
 
 export const certificates = [
