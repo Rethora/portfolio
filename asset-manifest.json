@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cbf597ea.css",
-    "main.js": "/portfolio/static/js/main.7c5a57c7.js",
+    "main.js": "/portfolio/static/js/main.7d09dd7d.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/twitch-bot.png": "/portfolio/static/media/twitch-bot.0d4c6caab0ed76c6d390.png",
     "static/media/minecraft-plugins.jpg": "/portfolio/static/media/minecraft-plugins.dc8f6ae7c2bac271ef4a.jpg",
+    "static/media/recipe-scraper.png": "/portfolio/static/media/recipe-scraper.ca3073bf00b06e28f699.png",
     "static/media/evt.png": "/portfolio/static/media/evt.3080842b3f0ef943aee5.png",
     "static/media/java-cert.jpg": "/portfolio/static/media/java-cert.158b6da0ffb04a934305.jpg",
     "static/media/js-css-html.jpg": "/portfolio/static/media/js-css-html.0a3a39543e4073975c87.jpg",
@@ -14,6 +15,7 @@
     "static/media/alien.png": "/portfolio/static/media/alien.8a2e0f9872eab2091d50.png",
     "static/media/software-design-principles.jpg": "/portfolio/static/media/software-design-principles.4a30583217fc72ecb286.jpg",
     "static/media/java-array-lists.jpg": "/portfolio/static/media/java-array-lists.a5bd41d3b42bc5003c38.jpg",
+    "static/media/cover-letter-writer.png": "/portfolio/static/media/cover-letter-writer.e291954d4a38855a3be7.png",
     "static/media/recommendation-system.png": "/portfolio/static/media/recommendation-system.55cb38e6093914373486.png",
     "static/media/simon.png": "/portfolio/static/media/simon.58be3aac9616df2cc00c.png",
     "static/media/python-computing.png": "/portfolio/static/media/python-computing.5482dc9abfd68d3c5f70.png",
@@ -21,15 +23,17 @@
     "static/media/data-visualization.png": "/portfolio/static/media/data-visualization.5d019bc239b18a1346ec.png",
     "static/media/bitmoji.png": "/portfolio/static/media/bitmoji.d010cdc5849cdf08eb34.png",
     "static/media/game-of-life.png": "/portfolio/static/media/game-of-life.0abc7910c276430e305f.png",
+    "static/media/best-buy-scalper.png": "/portfolio/static/media/best-buy-scalper.a8e33f30888758906625.png",
+    "static/media/react-quiz-component.png": "/portfolio/static/media/react-quiz-component.d7c362912395f4a966b6.png",
     "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.e11ae663a397f95c31ad.png",
     "index.html": "/portfolio/index.html",
     "main.cbf597ea.css.map": "/portfolio/static/css/main.cbf597ea.css.map",
-    "main.7c5a57c7.js.map": "/portfolio/static/js/main.7c5a57c7.js.map",
+    "main.7d09dd7d.js.map": "/portfolio/static/js/main.7d09dd7d.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbf597ea.css",
-    "static/js/main.7c5a57c7.js"
+    "static/js/main.7d09dd7d.js"
   ]
 }
